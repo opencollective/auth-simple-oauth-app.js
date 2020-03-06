@@ -12,7 +12,7 @@ export type Types = {
   Authentication: Authentication;
 };
 
-export function createOAuthAppAuth(options: StrategyOptions) {
+export function createSimpleOAuthAppAuth(options: StrategyOptions) {
   const state = Object.assign(
     {
       request: request.defaults({
